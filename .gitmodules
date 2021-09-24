@@ -1,0 +1,3 @@
+[submodule "backend/mas.js"]
+	path = backend/mas.js
+	url = https://github.com/Mokiros/mas.js
