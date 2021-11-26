@@ -7,16 +7,8 @@
 		"sourceType": "module",
 		"project": "./tsconfig.json"
 	},
-	"plugins": [
-		"@typescript-eslint",
-		"roblox-ts",
-		"prettier"
-	],
-	"extends": [
-		"plugin:@typescript-eslint/recommended",
-		"plugin:roblox-ts/recommended",
-		"plugin:prettier/recommended"
-	],
+	"plugins": ["@typescript-eslint", "roblox-ts", "prettier"],
+	"extends": ["plugin:@typescript-eslint/recommended", "plugin:roblox-ts/recommended", "plugin:prettier/recommended"],
 	"rules": {
 		"prettier/prettier": [
 			"warn",
@@ -26,8 +18,13 @@
 				"singleQuote": true,
 				"printWidth": 120,
 				"tabWidth": 4,
-				"useTabs": true
+				"useTabs": true,
+				"bracketSpacing": true,
+				"bracketSameLine": false,
+				"endOfLine": "lf",
+				"arrowParens": "always"
 			}
-		]
+		],
+		"roblox-ts/no-array-pairs": "none"
 	}
 }

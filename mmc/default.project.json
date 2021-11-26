@@ -1,8 +1,17 @@
 {
 	"name": "roblox-ts-game",
-	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
 	"tree": {
 		"$className": "DataModel",
+		"Lighting": {
+			"$className": "Lighting",
+			"$properties": {
+				"Technology": "Voxel"
+			}
+		},
 		"ServerScriptService": {
 			"$className": "ServerScriptService",
 			"TS": {
@@ -25,7 +34,12 @@
 			"$className": "StarterPlayer",
 			"$properties": {
 				"LoadCharacterAppearance": false,
-				"UserEmotesEnabled": false
+				"UserEmotesEnabled": false,
+				"EnableMouseLockOption": false,
+				"DevComputerMovementMode": "Scriptable",
+				"DevTouchMovementMode": "Scriptable",
+				"DevComputerCameraMovementMode": "Classic",
+				"DevTouchCameraMovementMode": "Classic"
 			},
 			"StarterPlayerScripts": {
 				"$className": "StarterPlayerScripts",
